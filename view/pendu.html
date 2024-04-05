@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/pendu.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <p class="mot" id="mot"></p>
+
+    <svg id="hangman" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <!-- La potence -->
+        <line x1="20" y1="20" x2="20" y2="180" stroke="black" stroke-width="4" />
+        <line x1="0" y1="180" x2="100" y2="180" stroke="black" stroke-width="4" />
+        <line x1="50" y1="20" x2="50" y2="40" stroke="black" stroke-width="4" id="gallows" />
+        <line x1="18" y1="20" x2="70" y2="20" stroke="black" stroke-width="4" />
+
+
+        <!-- La tête -->
+        <circle cx="50" cy="60" r="20" stroke="black" stroke-width="4" fill="white" id="head" visibility="hidden" />
+
+        <!-- Le corps -->
+        <line x1="50" y1="80" x2="50" y2="120" stroke="black" stroke-width="4" id="body" visibility="hidden" />
+
+        <!-- Les bras -->
+        <line x1="50" y1="85" x2="30" y2="100" stroke="black" stroke-width="4" id="left-arm" visibility="hidden" />
+        <line x1="50" y1="85" x2="70" y2="100" stroke="black" stroke-width="4" id="right-arm" visibility="hidden" />
+
+        <!-- Les jambes -->
+        <line x1="50" y1="120" x2="30" y2="150" stroke="black" stroke-width="4" id="left-leg" visibility="hidden" />
+        <line x1="50" y1="120" x2="70" y2="150" stroke="black" stroke-width="4" id="right-leg" visibility="hidden" />
+    </svg>
+
+    <div id="container">
+        <ul id="keyboard">
+            <li id='a' class='key'>a</li>
+            <li id='z' class='key'>z</li>
+            <li id='e' class='key'>e</li>
+            <li id='r' class='key'>r</li>
+            <li id='t' class='key'>t</li>
+            <li id='y' class='key'>y</li>
+            <li id='u' class='key'>u</li>
+            <li id='i' class='key'>i</li>
+            <li id='o' class='key'>o</li>
+            <li id='p' class='key'>p</li>
+            <li id='q' class='key'>q</li>
+            <li id='s' class='key'>s</li>
+            <li id='d' class='key'>d</li>
+            <li id='f' class='key'>f</li>
+            <li id='g' class='key'>g</li>
+            <li id='h' class='key'>h</li>
+            <li id='j' class='key'>j</li>
+            <li id='k' class='key'>k</li>
+            <li id='l' class='key'>l</li>
+            <li id='m' class='key'>m</li>
+            <li id='w' class='key'>w</li>
+            <li id='x' class='key'>x</li>
+            <li id='c' class='key'>c</li>
+            <li id='v' class='key'>v</li>
+            <li id='b' class='key'>b</li>
+            <li id='n' class='key'>n</li>
+        </ul>
+    </div>
+
+    <div id="perdu" class="perdu">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <p class="mot" id="perdu_mot">le mot était...</p>
+
+            <div>
+                <button class="relance" id="relance" role="button">Relancer</button>
+                <button class="exit" id="exit" role="button">Quitter</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="gagne" class="gagne">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <p class="mot">Trouvé !</p>
+            <div>
+                <button class="relance_two" id="relance_two" role="button">Relancer</button>
+                <button class="exit_two" id="exit_two" role="button">Quitter</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="croix" id="croix">X</div>
+
+
+    <script src="js/pendu.js"></script>
+
+</body>
+
+</html>

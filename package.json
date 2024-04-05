@@ -1,0 +1,21 @@
+{
+  "name": "projet-secret",
+  "version": "1.0.0",
+  "description": "Horror game",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "node test.js"
+  },
+  "author": "Mrjango (Alderamin)",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "electron-packager": "^17.1.2",
+    "os": "^0.1.2",
+    "wallpaper": "^7.2.1"
+  },
+  "devDependencies": {
+    "electron": "^29.1.1"
+  }
+}
