@@ -1,13 +1,12 @@
 {
-  "name": "projet-secret",
+  "name": "Pendu",
   "version": "1.0.0",
-  "description": "Horror game",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "electron .",
-    "test": "node test.js"
+    "start": "electron ."
   },
-  "author": "Mrjango (Alderamin)",
+  "author": "Mrjango (Rudy.D)",
   "license": "ISC",
   "dependencies": {
     "debug": "^4.3.4",
